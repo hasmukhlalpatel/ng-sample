@@ -29,6 +29,16 @@ To install the CLI using npm, open a terminal/console window and enter the follo
 ```
 npm install -g @angular/cli
 ```
+
+? Would you like to add Angular routing? (y/N)?
+
+? Which stylesheet format would you like to use? (Use arrow keys)
+
+Or with default option
+```
+npm install -g @angular/cli --style=scss --routing
+```
+
 Create a workspace and initial application
 
 ```
@@ -40,3 +50,4 @@ Serve the application
 cd my-app
 ng serve --open
 ```
+or short hand
