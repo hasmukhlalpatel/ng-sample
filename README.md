@@ -91,7 +91,14 @@ Create UserDetails component
 ng g c userDetails
 ```
 
-
+### Create a data service
+```
+ng generate service userData
+```
+Or 
+```
+ng g s userData
+```
 
 ## Usefull lniks
 ### Icons
