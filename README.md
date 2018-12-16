@@ -38,16 +38,37 @@ Or with default option
 ```
 npm install -g @angular/cli --style=scss --routing
 ```
+### Angular CLI help
+Available Commands:
+```
+ng help
+```
+Specific command help
+```
+ng new --help
+ng generate --help
+```
 
-Create a workspace and initial application
+
+### Create a workspace and initial application
 
 ```
-ng new my-app
+ng new sample-app
 ```
 
 Serve the application
 ```
-cd my-app
+cd sample-app
 ng serve --open
 ```
-or short hand
+or shorthand
+```
+ng s -o
+```
+
+Open into VS code
+```
+code .
+```
+
+### 
