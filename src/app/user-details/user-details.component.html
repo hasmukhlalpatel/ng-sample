@@ -1,0 +1,7 @@
+<div *ngIf="user$">
+    <h1>{{user$.name}}</h1>
+    <ul>
+        <li>{{user$.email}}</li>
+        <li> <a href="http://{{ user$.website }}"> {{user$.website}}</a> </li>
+    </ul>
+</div>
