@@ -94,7 +94,9 @@ ng g c userDetails
 
 
 ## Usefull lniks
+### Icons
 https://material.io/tools/icons/
 
+### Google Fonts
 https://fonts.google.com/
 
