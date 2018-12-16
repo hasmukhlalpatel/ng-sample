@@ -100,6 +100,16 @@ Or
 ng g s userData
 ```
 
+## build
+```
+ng build
+```
+production build
+```
+ng build --prod
+```
+
+
 ## Usefull lniks
 ### Icons
 https://material.io/tools/icons/
