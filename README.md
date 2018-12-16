@@ -71,4 +71,29 @@ Open into VS code
 code .
 ```
 
-### 
+### Generate a component
+Create Sidebar component
+```
+ng generate component sidebar
+```
+or shorthand
+```
+ng g c sidebar
+```
+
+Create Users component
+```
+ng g c users
+```
+
+Create UserDetails component
+```
+ng g c userDetails
+```
+
+
+
+## Usefull lniks
+https://material.io/tools/icons/
+https://fonts.google.com/
+
