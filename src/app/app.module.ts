@@ -7,20 +7,25 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { UsersComponent } from './users/users.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PhotosComponent } from './photos/photos.component';
+
+import { UserDataService } from './user-data.service';
+import { PhotoService } from './photo.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     UsersComponent,
-    UserDetailsComponent
+    UserDetailsComponent,
+    PhotosComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [UserDataService,PhotoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,13 @@
+<h1>  Users</h1>
+<ul>
+  <li *ngFor="let photo of photos" >
+    <a  routerLink="/details/{{photo.id}}" >
+      {{photo.title}}
+    </a>
+
+    <ul>
+      <li>{{photo.url}}</li>
+      <li> <a href="http://{{ photo.thumbnailUrl }}"> {{photo.thumbnailUrl}}</a> </li>
+    </ul>
+  </li>
+</ul>

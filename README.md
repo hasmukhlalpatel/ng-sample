@@ -53,6 +53,8 @@ To check that you have the npm client installed, run npm -v in a terminal/consol
 ```
 npm -v
 ```
+## install dev kit
+npm install --save-dev @angular-devkit/build-angular
 
 
 ## commands
