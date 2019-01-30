@@ -9,7 +9,6 @@ const userUrl = 'https://jsonplaceholder.typicode.com/users';
 })
 export class UserDataService {
 
-
   constructor(private http:HttpClient ) { }
 
   getAll(){
