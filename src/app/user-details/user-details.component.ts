@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserDataService } from '../user-data.service';
 import { observable } from 'rxjs';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 
 @Component({
@@ -13,17 +13,30 @@ export class UserDetailsComponent implements OnInit {
 
   user$: Object;
 
-  id:object;
+  id: object;
 
-  constructor( private dataServcie: UserDataService, private route: ActivatedRoute ) {
-    this.route.params.subscribe(p=> this.id = p.id);
-   }
+  constructor(private dataServcie: UserDataService, private route: ActivatedRoute, private router: Router) {
+    this.route.params.subscribe(p => this.id = p.id);
+  }
 
 
   ngOnInit() {
-    this.dataServcie.get(this.id).subscribe(data=> {
+    //var id = this.route.snapshot.paramMap.get('id');
+    this.dataServcie.get(this.id).subscribe(data => {
       this.user$ = data;
-    } );
+    });
+  }
+
+  goBack() {
+    //
+    //this.router.navigate([this.id],{relativeTo : this.route });
+    this.router.navigate(['../', { id: this.id }], { relativeTo: this.route });
+  }
+
+  showContact() {
+    //
+    //this.router.navigate([this.id],{relativeTo : this.route });
+    this.router.navigate(['contact'], { relativeTo: this.route });
   }
 
 }

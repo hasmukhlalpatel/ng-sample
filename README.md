@@ -125,6 +125,10 @@ Create UserDetails component
 ```
 ng g c userDetails
 ```
+Create component with inline html and style
+```
+ng g c page-not-found -it -is
+```
 
 ### Create a data service
 ```
