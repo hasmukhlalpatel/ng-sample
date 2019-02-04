@@ -147,7 +147,10 @@ production build
 ```
 ng build --prod
 ```
-
+Or deploy with virtual directory
+```
+ng build  --base-href "/virtual directory/" --prod
+```
 
 ## Usefull lniks
 ### Icons
